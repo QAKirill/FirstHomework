@@ -1,6 +1,5 @@
 package qa.homework;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.junit5.SoftAssertsExtension;
 import org.junit.jupiter.api.BeforeAll;
@@ -29,7 +28,9 @@ public class SelenidePageTest {
         open("/selenide");
 
         $("#wiki-tab").click();
-        $("#wiki-body").$(byText("Soft assertions")).should(Condition.visible).click();
+        $("#wiki-pages-box button").click();
+        $("#wiki-pages-box").shouldHave(text("SoftAssertions"));
+        $("#wiki-pages-box").$(byText("SoftAssertions")).click();
         $("#wiki-body").shouldHave(text("Using JUnit5 extend test class"));
         $("#wiki-body").shouldHave(text(
                 "@ExtendWith({SoftAssertsExtension.class})\n" +
