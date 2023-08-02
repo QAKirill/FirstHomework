@@ -21,7 +21,7 @@ public class GithubSolutionHoverTest {
     @Test
     void name() {
         open("/");
-        $(".header-menu-wrapper").$(byText("Solutions")).click();
+        $(".header-menu-wrapper").$(byText("Solutions")).hover();
         $(".header-menu-wrapper").$(byText("Enterprise")).click();
         $(".application-main ").$("h1").shouldHave(text("Build like the best"));
     }
