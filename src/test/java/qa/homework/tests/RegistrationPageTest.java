@@ -33,7 +33,7 @@ public class RegistrationPageTest extends TestBase{
                 .checkResultByRows("Student Email", email)
                 .checkResultByRows("Gender", gender)
                 .checkResultByRows("Mobile", phone)
-                .checkResultByRows("Date of Birth", day + " " + month + "," + year) //"18 August,1992")
+                .checkResultByRows("Date of Birth", day + " " + month + "," + year)
                 .checkResultByRows("Subjects", subject)
                 .checkResultByRows("Hobbies", hobby)
                 .checkResultByRows("Picture", fileName)
