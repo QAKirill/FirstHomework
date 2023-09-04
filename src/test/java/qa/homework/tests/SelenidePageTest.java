@@ -1,4 +1,4 @@
-package qa.homework;
+package qa.homework.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.junit5.SoftAssertsExtension;
