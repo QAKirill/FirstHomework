@@ -13,6 +13,7 @@ public class RegistrationPageTest extends TestBase{
     void fillFormTest() {
         registrationPage
                 .openPage()
+                .removeBanners()
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setEmail(email)
