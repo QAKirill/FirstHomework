@@ -25,7 +25,7 @@ public class RandomTestData {
     }
 
     public String getRandomGender(){
-        int x = (int)(Math.random() * 3);
+        int x = (int)(Math.random() * Gender.values().length);
         return Gender.values()[x].toString();
     }
 
@@ -39,33 +39,25 @@ public class RandomTestData {
     }
 
     public String getRandomMonth(){
-        int x = (int)(Math.random() * 12);
+        int x = (int)(Math.random() * Months.values().length);
         return Months.values()[x].toString();
     }
 
     public String getRandomDay(){
-        int first = (int)(Math.random() * 4);
-        int second;
-        if(first == 3){
-            second = (int)(Math.random() * 2);
+        StringBuilder builder = new StringBuilder(Integer.toString((int)(Math.random() * 30) + 1));
+        if (builder.length() == 1){
+            builder.insert(0,"0");
         }
-        else if(first == 0){
-            second = (int)(Math.random() * 9) + 1;
-        }
-        else {
-            second = (int)(Math.random() * 10);
-        }
-
-        return Integer.toString(first) + second;
+        return builder.toString();
     }
 
     public String getRandomSubject(){
-        int x = (int)(Math.random() * 14);
+        int x = (int)(Math.random() * Subjects.values().length);
         return Subjects.values()[x].getValue();
     }
 
     public String getRandomHobby(){
-        int x = (int)(Math.random() * 3);
+        int x = (int)(Math.random() * Hobbies.values().length);
         return Hobbies.values()[x].toString();
     }
 
@@ -74,7 +66,7 @@ public class RandomTestData {
     }
 
     public String getRandomState(){
-        int x = (int)(Math.random() * 4);
+        int x = (int)(Math.random() * States.values().length);
         return States.values()[x].getValue();
     }
 
@@ -84,19 +76,21 @@ public class RandomTestData {
         if (state != null) {
             switch (state) {
                 case "NCR":
-                    city = CitiesNCR.values()[(int) (Math.random() * 3)].toString();
+                    city = CitiesNCR.values()[(int) (Math.random() * CitiesNCR.values().length)].toString();
                     break;
 
                 case "Uttar Pradesh":
-                    city = CitiesUttarPradesh.values()[(int) (Math.random() * 3)].toString();
+                    city = CitiesUttarPradesh.values()
+                            [(int) (Math.random() * CitiesRajasthan.values().length)].toString();
                     break;
 
                 case "Haryana":
-                    city = CitiesHaryana.values()[(int) (Math.random() * 2)].toString();
+                    city = CitiesHaryana.values()[(int) (Math.random() * CitiesHaryana.values().length)].toString();
                     break;
 
                 case "Rajasthan":
-                    city = CitiesRajasthan.values()[(int) (Math.random() * 2)].toString();
+                    city = CitiesRajasthan.values()
+                            [(int) (Math.random() * CitiesRajasthan.values().length)].toString();
                     break;
             }
         }
