@@ -34,8 +34,7 @@ public class RandomTestData {
     }
 
     public String getRandomYear(int min, int max) {
-        max -= min;
-        return Integer.toString((int) (Math.random() * ++max) + min);
+        return faker.random().nextInt(min, max).toString();
     }
 
     public String getRandomMonth(){
