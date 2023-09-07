@@ -26,7 +26,7 @@ public class RandomTestData {
 
     public String getRandomGender(){
         int x = (int)(Math.random() * Gender.values().length);
-        return Gender.values()[x].toString();
+        return Gender.values()[x].getValue();
     }
 
     public String getRandomPhone(){
@@ -39,7 +39,7 @@ public class RandomTestData {
 
     public String getRandomMonth(){
         int x = (int)(Math.random() * Months.values().length);
-        return Months.values()[x].toString();
+        return Months.values()[x].getValue();
     }
 
     public String getRandomDay(){
@@ -57,7 +57,7 @@ public class RandomTestData {
 
     public String getRandomHobby(){
         int x = (int)(Math.random() * Hobbies.values().length);
-        return Hobbies.values()[x].toString();
+        return Hobbies.values()[x].getValue();
     }
 
     public String getRandomAddress(){
@@ -75,21 +75,21 @@ public class RandomTestData {
         if (state != null) {
             switch (state) {
                 case "NCR":
-                    city = CitiesNCR.values()[(int) (Math.random() * CitiesNCR.values().length)].toString();
+                    city = CitiesNCR.values()[(int) (Math.random() * CitiesNCR.values().length)].getValue();
                     break;
 
                 case "Uttar Pradesh":
                     city = CitiesUttarPradesh.values()
-                            [(int) (Math.random() * CitiesRajasthan.values().length)].toString();
+                            [(int) (Math.random() * CitiesRajasthan.values().length)].getValue();
                     break;
 
                 case "Haryana":
-                    city = CitiesHaryana.values()[(int) (Math.random() * CitiesHaryana.values().length)].toString();
+                    city = CitiesHaryana.values()[(int) (Math.random() * CitiesHaryana.values().length)].getValue();
                     break;
 
                 case "Rajasthan":
                     city = CitiesRajasthan.values()
-                            [(int) (Math.random() * CitiesRajasthan.values().length)].toString();
+                            [(int) (Math.random() * CitiesRajasthan.values().length)].getValue();
                     break;
             }
         }

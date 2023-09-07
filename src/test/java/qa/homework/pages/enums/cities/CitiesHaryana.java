@@ -1,6 +1,16 @@
 package qa.homework.pages.enums.cities;
 
 public enum CitiesHaryana {
-    Karnal,
-    Panipat
+    KARNAL("Karnal"),
+    PANIPAT("Panipat");
+
+    private final String value;
+
+    CitiesHaryana(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return value;
+    }
 }

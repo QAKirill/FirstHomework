@@ -1,7 +1,17 @@
 package qa.homework.pages.enums.cities;
 
 public enum CitiesNCR {
-    Delhi,
-    Gurgaon,
-    Noida
+    DELHI("Delhi"),
+    GURGAON("Gurgaon"),
+    NOIDA("Noida");
+
+    private final String value;
+
+    CitiesNCR(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return value;
+    }
 }

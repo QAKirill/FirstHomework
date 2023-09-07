@@ -1,16 +1,26 @@
 package qa.homework.pages.enums;
 
 public enum Months {
-    January,
-    February,
-    March,
-    April,
-    May,
-    June,
-    July,
-    August,
-    September,
-    October,
-    November,
-    December
+    JANUARY("January"),
+    FEBRUARY("February"),
+    MARCH("March"),
+    APRIL("April"),
+    MAY("May"),
+    JUNE("June"),
+    JULY("July"),
+    AUGUST("August"),
+    SEPTEMBER("September"),
+    OCTOBER("October"),
+    NOVEMBER("November"),
+    DECEMBER("December");
+
+    private final String value;
+
+    Months(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return value;
+    }
 }

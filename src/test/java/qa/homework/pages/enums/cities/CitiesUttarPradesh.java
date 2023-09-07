@@ -1,7 +1,17 @@
 package qa.homework.pages.enums.cities;
 
 public enum CitiesUttarPradesh {
-    Agra,
-    Lucknow,
-    Merrut
+    AGRA("Agra"),
+    LUCKNOW("Lucknow"),
+    MERRUT("Merrut");
+
+    private final String value;
+
+    CitiesUttarPradesh(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return value;
+    }
 }

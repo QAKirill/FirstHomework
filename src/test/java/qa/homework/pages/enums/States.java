@@ -1,10 +1,10 @@
 package qa.homework.pages.enums;
 
 public enum States {
-    Ncr("NCR"),
-    UttarPradesh("Uttar Pradesh"),
-    Haryana("Haryana"),
-    Rajasthan("Rajasthan");
+    NCR("NCR"),
+    UTTARPRADESH("Uttar Pradesh"),
+    HARYANA("Haryana"),
+    RAJASTHAN("Rajasthan");
 
     private final String value;
 
