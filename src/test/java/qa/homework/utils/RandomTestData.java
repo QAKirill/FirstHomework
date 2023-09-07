@@ -1,11 +1,11 @@
 package qa.homework.utils;
 
 import com.github.javafaker.Faker;
-import qa.homework.pages.enums.*;
-import qa.homework.pages.enums.cities.CitiesHaryana;
-import qa.homework.pages.enums.cities.CitiesNCR;
-import qa.homework.pages.enums.cities.CitiesRajasthan;
-import qa.homework.pages.enums.cities.CitiesUttarPradesh;
+import qa.homework.enums.*;
+import qa.homework.enums.cities.CitiesHaryana;
+import qa.homework.enums.cities.CitiesNCR;
+import qa.homework.enums.cities.CitiesRajasthan;
+import qa.homework.enums.cities.CitiesUttarPradesh;
 
 import java.util.Locale;
 

@@ -1,4 +1,4 @@
-package qa.homework.pages.enums.cities;
+package qa.homework.enums.cities;
 
 public enum CitiesUttarPradesh {
     AGRA("Agra"),

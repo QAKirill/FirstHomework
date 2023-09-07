@@ -1,4 +1,4 @@
-package qa.homework.pages.enums;
+package qa.homework.enums;
 
 public enum Subjects {
     HINDI("Hindi"),
