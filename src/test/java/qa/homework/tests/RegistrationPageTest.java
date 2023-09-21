@@ -1,6 +1,7 @@
 package qa.homework.tests;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import qa.homework.pages.RegistrationPage;
 import qa.homework.utils.TestData;
@@ -12,6 +13,7 @@ public class RegistrationPageTest extends TestBase{
     RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
+    @Tag("remote")
     @DisplayName("Successful registration")
     void successfulRegistrationTest() {
         TestData testData = new TestData(1900, 2100);
