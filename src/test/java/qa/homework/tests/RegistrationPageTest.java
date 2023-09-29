@@ -1,5 +1,6 @@
 package qa.homework.tests;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -52,5 +53,13 @@ public class RegistrationPageTest extends TestBase{
                 .checkResultByRows("Picture", testData.fileName)
                 .checkResultByRows("Address", testData.address)
                 .checkResultByRows("State and City", testData.state + " " + testData.city));
+    }
+
+
+    @Test
+    @Tag("remote")
+    @DisplayName("Fake test - always fails")
+    void fakeTest1() {
+        Assertions.assertTrue(false);
     }
 }
