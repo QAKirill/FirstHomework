@@ -5,6 +5,7 @@
 .idea
 build
 gradle
+notifications
 gradlew
 gradlew.bat
 settings.gradle
