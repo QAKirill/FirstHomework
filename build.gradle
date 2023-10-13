@@ -15,7 +15,8 @@ dependencies {
     testImplementation (
             'com.codeborne:selenide:6.16.0',
             'org.junit.jupiter:junit-jupiter:5.9.3',
-            'io.qameta.allure:allure-selenide:2.23.0'
+            'io.qameta.allure:allure-selenide:2.23.0',
+            'org.aeonbits.owner:owner:1.0.12'
     )
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.3'
 }
@@ -58,4 +59,5 @@ task remote_test(type: Test){
     useJUnitPlatform{
         includeTags("remote")
     }
+    systemProperties(System.getProperties())
 }

@@ -60,6 +60,7 @@ public class RegistrationPageTest extends TestBase{
     @Tag("remote")
     @DisplayName("Fake test - always fails")
     void fakeTest1() {
-        Assertions.assertTrue(false);
+        step("Успешно падаем", () ->
+        Assertions.assertTrue(false));
     }
 }
