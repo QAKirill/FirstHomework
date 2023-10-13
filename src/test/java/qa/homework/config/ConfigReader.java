@@ -3,7 +3,7 @@ package qa.homework.config;
 import org.aeonbits.owner.ConfigFactory;
 
 public enum ConfigReader {
-    Instance;
+    INSTANCE;
 
     private static final WebConfig webConfig =
             ConfigFactory.create(

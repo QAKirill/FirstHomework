@@ -55,9 +55,7 @@ public class RegistrationPageTest extends TestBase{
                 .checkResultByRows("State and City", testData.state + " " + testData.city));
     }
 
-
     @Test
-    @Tag("remote")
     @DisplayName("Fake test - always fails")
     void fakeTest1() {
         step("Успешно падаем", () ->

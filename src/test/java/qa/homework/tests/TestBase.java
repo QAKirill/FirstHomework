@@ -12,7 +12,7 @@ import qa.homework.config.WebConfig;
 import qa.homework.utils.Attach;
 
 public class TestBase {
-    private static final WebConfig webConfig = ConfigReader.Instance.read();
+    private static final WebConfig webConfig = ConfigReader.INSTANCE.read();
 
     @BeforeAll
     static void beforeAll() {
